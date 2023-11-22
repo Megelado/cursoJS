@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e sobrenome</title>
+</head>
+<body>
+   Nome: <input type="text" name="nome" id="n">
+   sobrenome: <input type="text" name="sobrenome" id="sn"> 
+   <input type="submit" value="Enviar" onclick="Enviar()">
+   <div id="resultado">
+    seu nome completo aparecerá aqui.
+   </div>
+   <script>
+    function Enviar() {
+        var n = document.getElementById('n')
+        var sn = document.getElementById('sn')
+        var res = document.getElementById('resultado')
+        var nome = String(n.value)
+        var sobrenome = String(sn.value)
+        var nome_completo = nome + ' ' + sobrenome
+        res.innerHTML = `Olá, seja bem vindo ${nome_completo}`
+    }
+   </script>
+</body>
+</html>

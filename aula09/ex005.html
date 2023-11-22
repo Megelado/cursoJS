@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: white;
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p name="beleza">Aqui vai o resultado</p>
+    <p id="identificador" class="classe">DOM</p>
+    <div>Clique em mim!</div>
+
+    <script>
+        const p1 = document.getElementsByClassName("classe")
+        p1.style.color = 'black'
+    </script>
+</body>
+</html>
